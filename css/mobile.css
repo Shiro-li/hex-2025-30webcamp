@@ -8,6 +8,11 @@
 
     }
 
+    h3.subtitle {
+        font-size: 48px;
+
+    }
+
     .py-80 {
         padding-top: 64px;
         padding-bottom: 64px;
@@ -36,6 +41,12 @@
         padding: 24px;
     }
 
+    .index-about-text {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
     /* about */
     .about-img {
         min-height: 375px;
@@ -45,8 +56,23 @@
         padding: 48px 12px;
     }
 
+    /* index about */
+    /* index-about */
+
+.about-cards{
+    position: relative;
+    flex-direction: column;
+}
+
+.about-content{
+    max-width: 100%;
+    position: static;
+    left: 0px;
+}
+
     /* footer */
     .social-list {
         display: none;
     }
+
 }

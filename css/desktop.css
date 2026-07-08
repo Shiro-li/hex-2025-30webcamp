@@ -6,7 +6,7 @@ body {
     color: #4B4B4B;
 }
 
-a > h2 {
+a>h2 {
     color: #000000;
 }
 
@@ -30,10 +30,14 @@ h4 {
     font-weight: 700;
 }
 
-article time{
+article time {
     margin-bottom: 4px;
 }
 
+h3.subtitle {
+    font-size: 64px;
+    color: #000;
+}
 
 .py-40 {
     padding-top: 40px;
@@ -45,6 +49,15 @@ article time{
     padding-bottom: 80px;
 }
 
+.g-64 {
+    gap: 64px;
+}
+
+.container-1076 {
+    margin: 0 auto;
+    max-width: 1076px;
+}
+
 .text-truncate-2 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -54,18 +67,18 @@ article time{
 
 /* 樣式 */
 
-.navbar{
+.navbar {
     min-height: 90px;
 }
 
-.btn-primary{
+.btn-primary {
     color: #4B4B4B;
-    background:#fff;
+    background: #fff;
     border: 1px solid #4B4B4B;
     border-radius: 40px;
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: #0027D5;
     border-radius: 40px;
     margin: 0 0 8px 8px;
@@ -76,7 +89,11 @@ article time{
     color: #4B4B4B;
 }
 
-footer a.page-link{
+footer a.page-link {
+    padding: 0px;
+}
+
+.index-about-text a.page-link {
     padding: 0px;
 }
 
@@ -98,5 +115,55 @@ footer a.page-link{
 
 }
 
+.index-about {
+    min-height: 192px;
+    position: relative;
+}
 
+.index-about-text {
+    position: absolute;
+    font-weight: 500;
+    color: #000;
+    font-size: 28px;
+    top: -120px;
+    right: 80px;
+    background-color: #fff;
+    padding: 80px 40px;
+}
 
+/* index-about */
+
+.about-cards {
+    position: relative;
+}
+
+.about-content {
+    max-width: 480px;
+    position: absolute;
+}
+
+.about-content-l {
+    left: 596px;
+}
+
+.about-content-r {
+    right: 596px;
+}
+
+.about-reverse {
+    flex-direction: row-reverse;
+}
+
+/* cta */
+.cta a, .cta{
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    vertical-align: middle;
+    
+}
+.cta-circle{
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 8px 12px;
+}
