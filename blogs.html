@@ -4,48 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/desktop.css  ">
+    <link rel="stylesheet" href="./css/mobile.css">
     <title>2025 web camp</title>
 </head>
 
 <body>
-    <nav class="nav justify-content-center">
-        <ul class="nav justify-content-center">
+    <nav class="nav justify-content-center navbar p-0">
+        <ul class="nav justify-content-center p-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">首頁</a>
+                <a class="nav-link" href="index.html">
+                    <h2 class="m-0">首頁</h2>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">部落格</a>
+                <a class="nav-link" href="blogs.html">
+                    <h2 class="m-0">部落格</h2>
+                </a>
             </li>
         </ul>
     </nav>
     <header class="headers container-fluid">
-        <div class="row index-blog-header">
-            <div class="selfie-1 col-lg-6">
-                <img src="./img/desktop/index/Hero Section.png" alt="" class="img-fluid">
+        <div class="row index-blog-header justify-content-center align-items-center p-0">
+            <div class="selfie-1 col-lg-6 p-0">
+                <!-- <img src="./img/desktop/index/Hero Section.png" alt="" class="img-fluid object-fit-cover"> -->
             </div>
-            <div class="selfie-2 col-lg-6">
-                <h1>Alyse Wang</h1>
-                <h2>前端工程師 & 職涯諮詢師</h2>
+            <div class="col-lg-6 selfie-2 p-0 d-flex align-items-center">
+                <div class="selfie-2-text">
+                    <h1>BLOG</h1>
+                    <h2>前端工程師 & 職涯諮詢師</h2>
+                </div>
             </div>
         </div>
     </header>
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 about">
-                    <img src="./img/desktop/blog/About Section.png" alt="" class="img-fluid">
+                <div class="col-lg-6 about p-0">
+                    <img src="./img/desktop/blog/About Section.png" alt="" class="img-fluid  about-img">
                 </div>
-                <article class="col-lg-6">
-                    <time datetime="2024-10-21">2024/10/21</time>
-                    <h4>前端開發 x 職涯成長</h4><button>最新文章</button>
-                    <h3>自學前端不用怕：從零開始的三大關鍵</h3>
-                    <p>嗨，我是 Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
-                        其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！</p>
-                    <a href="#" class="btn btn-primary">閱讀內文</a>
+                <article class="col-lg-6 d-flex align-items-center align-middle">
+                    <div class="about-content">
+                        <time datetime="2024-10-21">2024/10/21</time>
+                        <div class="d-flex align-items-center ">
+                            <h4>前端開發 x 職涯成長</h4>
+                            <button type="button" class="btn btn-secondary">最新文章</button>
+                        </div>
+                        <h3>自學前端不用怕：從零開始的三大關鍵</h3>
+                        <p class="text-truncate-2">嗨，我是
+                            Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
+                            其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！</p>
+                        <a href="#" class="btn btn-primary">閱讀內文</a>
+                    </div>
                 </article>
             </div>
         </div>
@@ -54,18 +71,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="input-group input-group-lg ">
+                    <div class="input-group input-group-lg align-items-center border rounded-pill p-2">
                         <span class="material-symbols-outlined">
                             search
                         </span>
 
-                        <input type="text" class="form-control" aria-describedby="inputGroup-sizing-lg"
-                            placeholder="搜尋你感興趣的文章">
+                        <input type="text" class="form-control border-0 p-0 ms-2"
+                            aria-describedby="inputGroup-sizing-lg" placeholder="搜尋你感興趣的文章">
                     </div>
                 </div>
             </div>
             <!-- 第一行 -->
-            <div class="row my-40">
+            <div class="row py-40">
                 <div class="col-lg-4">
                     <article class="card">
                         <img src="./img/desktop/blog/photo4.png" class="card-img-top" alt="文章列表">
@@ -111,7 +128,7 @@
                 </div>
             </div>
             <!-- 第二行 -->
-            <div class="row my-40">
+            <div class="row py-40">
                 <div class="col-lg-4">
                     <article class="card">
                         <img src="./img/desktop/blog/photo6.png" class="card-img-top" alt="文章列表">
@@ -157,7 +174,7 @@
                 </div>
             </div>
             <!-- 第三行 -->
-            <div class="row my-40">
+            <div class="row py-40">
                 <div class="col-lg-4">
                     <article class="card">
                         <img src="./img/desktop/blog/photo9.png" class="card-img-top" alt="文章列表">
@@ -166,7 +183,8 @@
                             <h4>#Git #協作流程</h4>
                             <h3 class="card-title">Git 與版本控制：前端協作的必修課</h3>
                             <p class="card-text text-truncate-2">
-                                當你從一人開發晉升到多人合作，版本控制的好壞往往決定了專案的順暢度。Git 不僅能記錄程式碼變動，更能確保每位成員都在正確的分支上完成任務。透過這篇文章，你將了解常見的 Git 流程，並學會在前端專案中輕鬆管理與協作。
+                                當你從一人開發晉升到多人合作，版本控制的好壞往往決定了專案的順暢度。Git 不僅能記錄程式碼變動，更能確保每位成員都在正確的分支上完成任務。透過這篇文章，你將了解常見的 Git
+                                流程，並學會在前端專案中輕鬆管理與協作。
                             </p>
                             <a href="#" class="btn btn-primary">閱讀內文</a>
                         </div>
@@ -180,7 +198,8 @@
                             <h4>#SEO #網頁曝光</h4>
                             <h3 class="card-title">SEO 與前端最佳實踐：讓搜尋引擎看見你的網站</h3>
                             <p class="card-text text-truncate-2">
-                                即使你的網站擁有優美的介面與強大的功能，如果在搜尋引擎上找不到它，那就形同隱形。身為前端工程師，瞭解基本的 SEO 概念與技術是讓網站脫穎而出的關鍵。這篇文章將分享我在前端實作時，常用的 SEO 小技巧與實務做法，幫助你顯著提升網站曝光度。
+                                即使你的網站擁有優美的介面與強大的功能，如果在搜尋引擎上找不到它，那就形同隱形。身為前端工程師，瞭解基本的 SEO
+                                概念與技術是讓網站脫穎而出的關鍵。這篇文章將分享我在前端實作時，常用的 SEO 小技巧與實務做法，幫助你顯著提升網站曝光度。
                             </p>
                             <a href="#" class="btn btn-primary">閱讀內文</a>
                         </div>
@@ -202,16 +221,18 @@
                 </div>
             </div>
             <!-- 第四行 -->
-            <div class="row my-40">
+            <div class="row py-40">
                 <div class="col-lg-4">
                     <article class="card">
-                        <img src="./img/desktop/blog/photo9.png" class="card-img-top" alt="文章列表">
+                        <img src="./img/desktop/blog/photo11.png" class="card-img-top" alt="文章列表">
                         <div class="card-body">
                             <time datetime="2024-02-17">2024/02/17</time>
                             <h4>#TypeScript #程式設計</h4>
                             <h3 class="card-title">TypeScript 快速上手：強化前端程式碼的安全與可讀性</h3>
                             <p class="card-text text-truncate-2">
-                                許多前端開發者在成長過程中都曾面臨動態語言帶來的錯誤風險，而 TypeScript 的出現正是為了改善這種情況。它能在開發階段即發現型別錯誤，並帶來更友善的程式碼提示。本篇文章將介紹如何在前端專案中導入 TypeScript，並透過真實案例展示它為開發流程帶來的優勢。
+                                許多前端開發者在成長過程中都曾面臨動態語言帶來的錯誤風險，而 TypeScript
+                                的出現正是為了改善這種情況。它能在開發階段即發現型別錯誤，並帶來更友善的程式碼提示。本篇文章將介紹如何在前端專案中導入
+                                TypeScript，並透過真實案例展示它為開發流程帶來的優勢。
                             </p>
                             <a href="#" class="btn btn-primary">閱讀內文</a>
                         </div>
@@ -219,7 +240,7 @@
                 </div>
                 <div class="col-lg-4">
                     <article class="card">
-                        <img src="./img/desktop/blog/photo7.png" class="card-img-top" alt="文章列表">
+                        <img src="./img/desktop/blog/photo10.png" class="card-img-top" alt="文章列表">
                         <div class="card-body">
                             <time datetime="2024-02-07">2024/02/07</time>
                             <h4>#測試框架 #品質保證</h4>
@@ -231,7 +252,7 @@
                         </div>
                     </article>
                 </div>
-                
+
                 <!-- <div class="col-lg-4">
                     <article class="card">
                         <img src="./img/desktop/blog/photo8.png" class="card-img-top" alt="文章列表">
@@ -248,13 +269,17 @@
                     </article>
                 </div>
             </div> -->
+
+            </div>
             <!-- 分頁 (Pagination) -->
-            <div class="row">
+            <div class="row text-center">
                 <nav aria-label="Page navigation">
                     <ul class="pagination justify-content-center">
                         <li class="page-item">
                             <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
+                                <span aria-hidden="true" class="material-symbols-outlined">
+                                    arrow_back_ios
+                                </span>
                             </a>
                         </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -265,7 +290,9 @@
                         <li class="page-item"><a class="page-link" href="#">...</a></li>
                         <li class="page-item">
                             <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
+                                <span aria-hidden="true" class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -273,6 +300,48 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row align-items-center py-80 social-list p-0">
+                <div class="col-lg-9"><a href="alysewang@hexschool.com" class="text-decoration-none">
+                        <h2>alysewang@hexschool.com</h2>
+                    </a></div>
+                <div class="col-lg-3 p-0">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <img src="./img/desktop/index/onlyIcon.png" alt="">
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <img
+                                        src="./img/desktop/index/onlyIcon-1.png" alt=""></a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <img
+                                        src="./img/desktop/index/onlyIcon-2.png" alt=""></a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <img
+                                        src="./img/desktop/index/icons8-linkedin.png" alt=""></a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <img src="./img/desktop/index/onlyIcon-3.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center py-4 text-center">
+                <div class="col-lg-6">
+                    <p>© 2025 Alyse Wang. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

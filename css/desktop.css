@@ -1,39 +1,48 @@
+/* 設定 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-h3{
+body {
+    font-family: "Noto Sans TC", serif;
+    color: #4B4B4B;
+}
+
+a > h2 {
+    color: #000000;
+}
+
+h1 {
+    color: blue;
+    font-size: 120px;
     font-weight: 700;
 }
+
+h2 {
+    color: blue;
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: 700;
+}
+
 h4 {
     color: blue;
     font-weight: 700;
 }
 
-.pagination a{
-    border: 0px;
-    color: #4B4B4B;
-    background-color: #fff;
+article time{
+    margin-bottom: 4px;
 }
 
-.my-40{
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .py-80 {
     padding-top: 80px;
     padding-bottom: 80px;
-}
-
-.selfie-1,
-.selfie-2 {
-    padding: 0px;
-}
-
-.selfie-2 {
-    background-image: url(../img/desktop/index/Hero\ Section2.png);
-}
-
-.card-body > time {
-    margin-bottom: 4px;
 }
 
 .text-truncate-2 {
@@ -42,3 +51,52 @@ h4 {
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
+
+/* 樣式 */
+
+.navbar{
+    min-height: 90px;
+}
+
+.btn-primary{
+    color: #4B4B4B;
+    background:#fff;
+    border: 1px solid #4B4B4B;
+    border-radius: 40px;
+}
+
+.btn-secondary{
+    background-color: #0027D5;
+    border-radius: 40px;
+    margin: 0 0 8px 8px;
+}
+
+.pagination a {
+    border: 0px;
+    color: #4B4B4B;
+}
+
+footer a.page-link{
+    padding: 0px;
+}
+
+
+.selfie-1 {
+    background-image: url(../img/desktop/index/Hero\ Section.png);
+
+}
+
+.selfie-2 {
+    background-image: url(../img/desktop/index/Hero\ Section2.png);
+}
+
+.selfie-1,
+.selfie-2 {
+    background-size: cover;
+    min-height: 834px;
+    background-position: center;
+
+}
+
+
+

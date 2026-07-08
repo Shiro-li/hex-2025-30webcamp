@@ -1,0 +1,52 @@
+@media (max-width: 992px) {
+
+    /* 設定 */
+    h1 {
+
+        font-size: 52px;
+        margin-bottom: 12px;
+
+    }
+
+    .py-80 {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    /* 樣式 */
+    /* nvbar */
+    .navbar {
+        min-height: 90px;
+    }
+
+    /* header */
+    .selfie-1 {
+
+        min-height: 375px;
+        background-position: right;
+
+    }
+
+    .selfie-2 {
+        min-height: auto;
+
+    }
+
+    .selfie-2-text {
+        padding: 24px;
+    }
+
+    /* about */
+    .about-img {
+        min-height: 375px;
+    }
+
+    .about-content {
+        padding: 48px 12px;
+    }
+
+    /* footer */
+    .social-list {
+        display: none;
+    }
+}
