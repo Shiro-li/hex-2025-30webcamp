@@ -39,6 +39,10 @@ h3.subtitle {
     color: #000;
 }
 
+.success-cases h4 {
+    color: #000000;
+}
+
 .py-40 {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -71,6 +75,10 @@ h3.subtitle {
     min-height: 90px;
 }
 
+.text-blue {
+    color: #0027D5;
+}
+
 .btn-primary {
     color: #4B4B4B;
     background: #fff;
@@ -82,6 +90,14 @@ h3.subtitle {
     background-color: #0027D5;
     border-radius: 40px;
     margin: 0 0 8px 8px;
+}
+
+.btn-success {
+    background: #fff;
+    border: 1px solid #0027D5;
+    color: #0027D5;
+    border-radius: 40px;
+    font-weight: 700;
 }
 
 .pagination a {
@@ -155,15 +171,119 @@ footer a.page-link {
 }
 
 /* cta */
-.cta a, .cta{
+.cta a,
+.cta {
     color: #000;
     font-size: 28px;
     font-weight: 700;
     vertical-align: middle;
-    
+
 }
-.cta-circle{
+
+.cta-circle {
     border: 1px solid #000;
     border-radius: 50%;
     padding: 8px 12px;
+}
+
+/* index - blogs 精選 */
+
+.blogs-select {
+    max-width: 1296px;
+    width: 100%;
+}
+
+.mobile-blogs-arrow {
+
+    display: none;
+    margin-top: 32px;
+}
+
+.pc-blogs-arrow {
+    display: flex;
+}
+
+.blog-arrow-l,
+.blog-arrow-r {
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.blog-arrow-l {
+    background-color: #B2BEF2;
+}
+
+.blog-arrow-r {
+    background-color: #0027D5;
+}
+
+/* blog card */
+
+.card {
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primary {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* success case */
+
+.success-case-header {
+    position: relative;
+    font-weight: 700;
+}
+
+/* 灰色的frame */
+.success-header-img {
+    padding: 24px;
+    background-color: #EDEDED;
+    /* max-width: 745px; */
+    margin-bottom: 40px;
+
+}
+
+.success-summary {
+    background-color: #fff;
+    position: absolute;
+    max-width: 526px;
+    top: 29px;
+    left: 550px;
+    padding: 80px 40px;
+}
+
+.success-cta {
+    position: absolute;
+    background-color: #F5F5F5;
+    max-width: 526px;
+    top: 285px;
+    right: 0px;
+    padding: 80px 40px;
+}
+
+.success-cases {
+    background-color: #F5F5F5;
+    padding: 24px 12px;
+    justify-content: space-between;
+}
+
+.case-point {
+    border-bottom: 1px solid #4B4B4B;
+}
+
+.success-cases .btn-primary {
+    background-color: #F5F5F5;
+    padding: 8px 16px;
+
+}
+
+.case-img {
+    max-width: 80px;
 }
