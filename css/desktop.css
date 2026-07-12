@@ -124,7 +124,8 @@ footer a.page-link {
 }
 
 .selfie-1,
-.selfie-2 {
+.selfie-2,
+.newsletter-1 {
     background-size: cover;
     min-height: 834px;
     background-position: center;
@@ -287,3 +288,74 @@ footer a.page-link {
 .case-img {
     max-width: 80px;
 }
+
+/* newsletter section */
+.newsletter-section{
+    padding: 80px;
+}
+
+.newsletter-1{
+    background-image: url(../img/desktop/index/photo9.png);
+}
+.newsletter-text{
+    padding: 80px;
+    width: 100%;
+}
+
+.newsletter-text p{
+    margin-bottom: 24px;
+}
+
+.newsletter-text input{
+    width: 100%;
+    margin-bottom: 8px;
+    border: 0px;
+    background-color: #F1F1F1;
+    color: #4B4B4B;
+    padding: 8px 16px;
+}
+
+.newsletter-btn{
+    margin-top: 16px;
+}
+
+.contact-list li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    align-items: center;
+    padding: 16px 0px;
+    margin: 0px;
+}
+
+.contact-list a{
+    text-decoration: none;
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.contact-list p {
+    display: flex;
+       padding: 0px;
+       margin: 0px;
+       justify-content: center;
+       align-items: center;
+       gap: 8px;
+}
+
+.contact-mail a, .contact-mail p{
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.contact-mail {
+    padding: 16px 0px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
